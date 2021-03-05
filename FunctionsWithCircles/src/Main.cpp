@@ -35,7 +35,7 @@ int main()
 	cout << "\n\n" << endl;
 
 	//ask for two numbers
-	vector<string> sRadius(2);	vector<int> iRadius(2);
+	vector<string> sRadius(2);	vector<int> iRadius(2);  vector<double> vols(2)
 	double vol1, vol2, diff;
 	bool yesOrNo;
 
@@ -60,11 +60,21 @@ int main()
 
 	vol1 = calculateVolume(iRadius.at(0));
 	vol2 = calculateVolume(iRadius.at(1));
+
+	printf("\n%-15s %-15s\n", " Radii ", " Volume ");
+	printf("%-15s %-15s\n", "-------", "--------");
+	for (int i = 0; i < 2; i++) {
+		printf("%-15i %-15.1f\n", iRadius.at(i), vol1);
+	}
 	
-	if (vol1 > vol2)
+	if (vol1 > vol2) {
 		diff = vol1 - vol2;
-	else
+		printf("\n%-10.1f minus %-7.1f is equal to %-10.1f", vol1, vol2, diff);
+	}
+	else {
 		diff = vol2 - vol1;
+		printf("\n%-10.1f minus %-7.1f is equal to %-10.1f", vol2, vol1, diff);
+	}
 
 
 

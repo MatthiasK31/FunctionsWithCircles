@@ -29,9 +29,6 @@ bool checkValidNumInput(string tester)
 		if (temp != num) {
 			return true;
 		}
-		if (num > 8 || num < 1) {
-			return true;
-		}
 	}
 	catch (invalid_argument& e) {
 		//prompt user for valid input/continue loop
