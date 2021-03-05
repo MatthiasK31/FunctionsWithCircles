@@ -41,12 +41,12 @@ int main()
 	{
 		cout << "Enter radius " << i+1 << ":  ";
 		cin >> radius.at(i);
-		while (1)
+		while (true)
 		{
 			if (cin.fail())
 			{
 				cin.clear();
-				cin.ignore(INT_MAX, '\n');
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
 				cout << "You have entered wrong input" << endl;
 				cin >> radius.at(i);
 			}
