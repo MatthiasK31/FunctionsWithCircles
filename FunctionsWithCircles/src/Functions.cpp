@@ -21,7 +21,7 @@ double calculateVolume(int r)
 
 bool checkValidNumInput(string tester)
 {
-	//try-cathc to validate input
+	//try-catch to validate input
 	try {
 		double temp = stod(tester);
 		int num = stoi(tester); // error trap this with a try/catch block
