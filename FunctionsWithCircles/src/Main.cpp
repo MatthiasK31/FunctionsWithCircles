@@ -9,7 +9,6 @@ Extra: Printed all of the odd numbers from 1-10
 #include <iomanip>
 #include <string>
 #include <vector>
-
 #include "Circles.h"
 
 using namespace std;
