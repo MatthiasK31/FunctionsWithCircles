@@ -1,3 +1,11 @@
+/*
+Matthias Kim
+Functions With Circles
+3/5/2021
+Extra: Printed all of the odd numbers from 1-10
+*/
+
+//this define is so that I can use M_PI
 #define _USE_MATH_DEFINES
 
 #include <cmath>
