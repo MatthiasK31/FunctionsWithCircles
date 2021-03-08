@@ -23,7 +23,7 @@ double calculateArea(int r)
 
 double calculateVolume(int r)
 {
-	double volume = (4 / 3) * M_PI * pow(r, 3);
+	double volume = 1.3333333 * M_PI * pow(r, 3);
 	return volume;
 }
 
@@ -35,6 +35,9 @@ bool checkValidNumInput(string tester)
 		int num = stoi(tester); // error trap this with a try/catch block
 
 		if (temp != num) {
+			return true;
+		}
+		if (temp < 0 && num < 0) {
 			return true;
 		}
 	}

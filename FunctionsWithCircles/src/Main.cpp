@@ -19,9 +19,9 @@ int main()
 	printf("%-15s %-15s\n", " Radii ", " Area ");
 	printf("%-15s %-15s\n", "-------", "------");
 	//loop through 10 and print each circle's area with the assigned radius
-	for (int i = 0; i < 10; i++) {
+	for (int i = 1; i <= 10; i++) {
 		double area = calculateArea(i);
-		printf("%-15i %-15.1f\n", i + 1, area);
+		printf("%-15i %-15.1f\n", i, area);
 	}
 
 	//linebreak in between
