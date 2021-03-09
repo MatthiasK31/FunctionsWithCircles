@@ -92,10 +92,11 @@ int main()
 	//determine which number to subtract from the other, then print out the final message accordingly
 	if (vol1 > vol2) {
 		diff = vol1 - vol2;
-		printf("\n%-10.1f minus %-7.1f is equal to %-4.1f!", vol2, vol2, diff);
+		printf("%-15s %-15.1f\n", "Difference:", diff);
+
 	}
 	else {
 		diff = vol2 - vol1;
-		printf("\n%-10.1f minus %-7.1f is equal to %-4.1f!", vol2, vol1, diff);
+		printf("%-15s %-15.1f\n", "Difference:", diff);
 	}
 }
