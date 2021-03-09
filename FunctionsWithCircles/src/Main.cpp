@@ -15,13 +15,14 @@ using namespace std;
 
 int main()
 {
+	double area, volume;
+
 	//print the column headers
 	printf("%-15s %-15s\n", " Radii ", " Area ");
 	printf("%-15s %-15s\n", "-------", "------");
 	//loop through 10 and print each circle's area with the assigned radius
 	for (int i = 1; i <= 10; i++) {
-		double area = calculateArea(i);
-		printf("%-15i %-15.1f\n", i, area);
+		printf("%-15i %-15.1f\n", i, calculateArea(i));
 	}
 
 	//linebreak in between
@@ -32,20 +33,19 @@ int main()
 	printf("%-15s %-15s\n", "---------", "--------");
 	//start at the lowest even number and go up to 10
 	for (int i = 2; i <= 10; i += 2) {
-		double volume = calculateVolume(i);
-		printf("%-15i %-15.1f\n", i, volume);
+		printf("%-15i %-15.1f\n", i, calculateVolume(i));
 	}
 	
 	//linebreak in between
 	cout << "\n" << endl;
 
+	//EXTRA:
 	//print the column headers for odd numbers
 	printf("%-15s %-15s\n", " Odd #s ", " Volume ");
 	printf("%-15s %-15s\n", "--------", "--------");
 	//start at the lowest odd number and go up to 9
 	for (int i = 1; i < 10; i += 2) {
-		double volume = calculateVolume(i);
-		printf("%-15i %-15.1f\n", i, volume);
+		printf("%-15i %-15.1f\n", i, calculateVolume(i));
 	}
 
 	//linebreak in between
@@ -92,10 +92,10 @@ int main()
 	//determine which number to subtract from the other, then print out the final message accordingly
 	if (vol1 > vol2) {
 		diff = vol1 - vol2;
-		printf("\n%-10.1f minus %-7.1f is equal to %-10.1f!", vol2, vol2, diff);
+		printf("\n%-10.1f minus %-7.1f is equal to %-4.1f!", vol2, vol2, diff);
 	}
 	else {
 		diff = vol2 - vol1;
-		printf("\n%-10.1f minus %-7.1f is equal to %-10.1f!", vol2, vol1, diff);
+		printf("\n%-10.1f minus %-7.1f is equal to %-4.1f!", vol2, vol1, diff);
 	}
 }
